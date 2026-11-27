@@ -10,7 +10,7 @@
 <style>
   :root{
     --bg:#140E2C; --ink:#F3EFFB; --lilac:#C9A5F5; --violet:#A78BE0; --cyan:#7ADFF5;
-    --muted:#BCAEDD; --muted2:#B3A5D4; --dim:#9C8CC8; --faint:#7E6BB4; --deep:#1B1140;
+    --muted:#D2C7EC; --muted2:#C9BDE5; --dim:#B9ABE0; --faint:#A393D6; --deep:#1B1140;
     --pad:60px;
   }
   *{box-sizing:border-box;}
@@ -65,9 +65,9 @@
   .hero>*{position:relative;z-index:1;}
   .badge{display:inline-flex;align-items:center;gap:11px;padding:10px 22px;border-radius:999px;}
   .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px 2px rgba(122,223,245,.9);}
-  .hero h1{font-size:clamp(44px,8.5vw,104px);font-weight:300;line-height:.98;letter-spacing:-0.045em;margin-top:30px;}
+  .hero h1{font-size:clamp(44px,8.5vw,104px);font-weight:400;line-height:.98;letter-spacing:-0.045em;margin-top:30px;}
   .hero h1 b{font-weight:600;}
-  .hero p.sub{margin:28px auto 0;max-width:640px;font-size:clamp(15px,2vw,18px);font-weight:400;line-height:1.7;color:#EDE7FA;}
+  .hero p.sub{margin:28px auto 0;max-width:640px;font-size:clamp(15px,2vw,18px);font-weight:500;line-height:1.7;color:#EDE7FA;}
   .hero .cta-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px;margin-top:36px;}
   /* ---- Section frame ---- */
   section.blk{padding:70px var(--pad) 0;max-width:1440px;margin:0 auto;}
@@ -75,7 +75,7 @@
   /* ---- Catalogue ---- */
   .cat-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;}
   .cat-head h2{font-size:clamp(30px,4vw,46px);font-weight:500;letter-spacing:-0.038em;margin-top:14px;}
-  .cat-head p{margin:0;max-width:470px;font-size:15.5px;font-weight:400;line-height:1.7;color:#D3CBEC;}
+  .cat-head p{margin:0;max-width:470px;font-size:15.5px;font-weight:500;line-height:1.7;color:#E0D9F2;}
   .cat-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;margin-top:30px;}
   .cat-row{display:grid;grid-template-columns:52px minmax(0,1fr) 64px;align-items:baseline;gap:14px;
     padding:14px 0;border-bottom:1px solid rgba(255,255,255,.10);cursor:pointer;transition:padding-left .2s ease;}
@@ -94,8 +94,8 @@
   .tile .cap .s{margin-top:7px;font-size:9.5px;color:var(--dim);}
   /* ---- Compounds ---- */
   .compounds{text-align:center;}
-  .compounds h2{font-size:clamp(30px,4.5vw,52px);font-weight:400;letter-spacing:-0.04em;margin-top:16px;}
-  .compounds p{margin:16px auto 0;max-width:660px;font-size:16px;font-weight:400;line-height:1.7;color:#EDE7FA;}
+  .compounds h2{font-size:clamp(30px,4.5vw,52px);font-weight:500;letter-spacing:-0.04em;margin-top:16px;}
+  .compounds p{margin:16px auto 0;max-width:660px;font-size:16px;font-weight:500;line-height:1.7;color:#EDE7FA;}
   .chips{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:9px;margin-top:28px;}
   .chip{padding:12px 22px;border-radius:999px;}
   .chip.solid{background:var(--ink);color:var(--deep);}
@@ -104,10 +104,10 @@
   .step{padding:30px 28px 32px;}
   .step .n{color:var(--lilac);}
   .step h3{margin-top:14px;font-size:21px;font-weight:500;letter-spacing:-0.025em;}
-  .step p{margin:10px 0 0;font-size:14.5px;font-weight:400;line-height:1.7;color:#D3CBEC;}
+  .step p{margin:10px 0 0;font-size:14.5px;font-weight:500;line-height:1.7;color:#E0D9F2;}
   /* ---- Trust strip ---- */
   .trust{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:40px;}
-  .trust .t{padding:14px 24px;border-radius:999px;font-size:13px;font-weight:300;color:#DAD0F2;}
+  .trust .t{padding:14px 24px;border-radius:999px;font-size:13px;font-weight:500;color:#E6DFF6;}
   .trust .t b{font-weight:600;color:#fff;}
   /* ---- Contact CTA ---- */
   .cta-final{position:relative;margin:80px var(--pad) 40px;max-width:1320px;margin-left:auto;margin-right:auto;
@@ -115,13 +115,13 @@
   .cta-final::before{content:"";position:absolute;inset:0;z-index:0;
     background:radial-gradient(100% 120% at 50% 30%,rgba(20,14,44,.10) 0%,rgba(20,14,44,.72) 78%);}
   .cta-final>*{position:relative;z-index:1;}
-  .cta-final h2{font-size:clamp(36px,6vw,62px);font-weight:300;line-height:1.04;letter-spacing:-0.042em;}
+  .cta-final h2{font-size:clamp(36px,6vw,62px);font-weight:400;line-height:1.04;letter-spacing:-0.042em;}
   .cta-final h2 b{font-weight:600;}
-  .cta-final p{margin:22px auto 0;max-width:600px;font-size:17px;font-weight:400;line-height:1.7;color:#EDE7FA;}
+  .cta-final p{margin:22px auto 0;max-width:600px;font-size:17px;font-weight:500;line-height:1.7;color:#EDE7FA;}
   .contact-chips{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px;margin-top:36px;}
   .cc{padding:15px 24px;border-radius:999px;}
   .cc .k{color:var(--violet);font-size:9px;}
-  .cc .v{font-size:14.5px;font-weight:300;}
+  .cc .v{font-size:14.5px;font-weight:500;}
   /* ---- Footer ---- */
   footer.site{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
     padding:24px var(--pad) 44px;max-width:1440px;margin:0 auto;}
@@ -132,12 +132,12 @@
   .modal-overlay.open{display:flex;}
   .modal{width:100%;max-width:560px;border-radius:30px;padding:36px 36px 34px;max-height:92vh;overflow:auto;}
   .modal h3{font-size:28px;font-weight:500;letter-spacing:-0.03em;}
-  .modal p.small{margin:8px 0 22px;font-size:14px;font-weight:300;color:var(--muted);line-height:1.6;}
+  .modal p.small{margin:8px 0 22px;font-size:14px;font-weight:500;color:var(--muted);line-height:1.6;}
   .field{margin-bottom:14px;}
   .field label{display:block;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--violet);margin-bottom:7px;}
   .field input,.field textarea,.field select{width:100%;padding:13px 16px;border-radius:14px;
     background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);color:var(--ink);
-    font:inherit;font-size:14.5px;font-weight:300;}
+    font:inherit;font-size:14.5px;font-weight:500;}
   .field textarea{min-height:88px;resize:vertical;}
   .field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--lilac);}
   .modal .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
@@ -170,18 +170,18 @@
   .showcase{position:relative;border-radius:36px;overflow:hidden;}
   .showcase img{width:100%;display:block;max-height:520px;object-fit:cover;}
   .showcase .sc-cap{position:absolute;left:0;bottom:0;right:0;padding:40px 48px;max-width:640px;background:linear-gradient(0deg,rgba(20,14,44,.92),rgba(20,14,44,.15) 85%,transparent);}
-  .showcase .sc-cap h2{font-size:clamp(26px,3.6vw,44px);font-weight:400;letter-spacing:-0.038em;margin-top:8px;}
-  .showcase .sc-cap p{margin:12px 0 0;font-size:15.5px;font-weight:400;line-height:1.7;color:#E7DFF6;}
+  .showcase .sc-cap h2{font-size:clamp(26px,3.6vw,44px);font-weight:500;letter-spacing:-0.038em;margin-top:8px;}
+  .showcase .sc-cap p{margin:12px 0 0;font-size:15.5px;font-weight:500;line-height:1.7;color:#E7DFF6;}
   .drawband{position:relative;border-radius:30px;overflow:hidden;background:#0e0a20;}
   .drawband img{width:100%;display:block;max-height:560px;object-fit:cover;opacity:.97;}
   .drawband .db-cap{position:absolute;left:0;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;padding:44px 54px;max-width:500px;background:linear-gradient(90deg,rgba(14,10,32,.92),rgba(14,10,32,.4) 66%,transparent);}
-  .drawband .db-cap h2{font-size:clamp(28px,4vw,50px);font-weight:300;letter-spacing:-0.04em;margin-top:8px;}
+  .drawband .db-cap h2{font-size:clamp(28px,4vw,50px);font-weight:400;letter-spacing:-0.04em;margin-top:8px;}
   .drawband .db-cap h2 b{font-weight:600;}
-  .drawband .db-cap p{margin:14px 0 0;font-size:16px;font-weight:400;line-height:1.7;color:#E7DFF6;}
+  .drawband .db-cap p{margin:14px 0 0;font-size:16px;font-weight:500;line-height:1.7;color:#E7DFF6;}
   @media(max-width:700px){.drawband .db-cap,.showcase .sc-cap{position:static;max-width:none;background:rgba(14,10,32,.55);}}
   .site-foot{max-width:1440px;margin:40px auto 0;padding:40px var(--pad) 34px;border-top:1px solid rgba(255,255,255,.10);}
   .foot-top{display:grid;grid-template-columns:1.7fr 1fr 1fr 1.4fr;gap:30px;}
-  .foot-brand p{margin:14px 0 0;max-width:290px;font-size:13.5px;font-weight:400;line-height:1.7;color:#C6BAE6;}
+  .foot-brand p{margin:14px 0 0;max-width:290px;font-size:13.5px;font-weight:500;line-height:1.7;color:#D8CEEF;}
   .foot-col{display:flex;flex-direction:column;gap:10px;}
   .foot-col .lbl{color:var(--faint);margin-bottom:4px;}
   .foot-col a{color:#D9D0EE;font-size:14px;}.foot-col a:hover{color:#fff;}
@@ -198,7 +198,7 @@
   .mcard::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,10,32,.24) 0%,rgba(14,10,32,.60) 52%,rgba(14,10,32,.92) 100%);}
   .mcard .mb{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:28px 30px 26px;}
   .mcard .mb h3{font-size:clamp(21px,2.4vw,28px);font-weight:500;letter-spacing:-0.032em;}
-  .mcard .mb p{margin:10px 0 0;font-size:13.5px;font-weight:400;line-height:1.62;color:#D6CCF0;max-width:34ch;}
+  .mcard .mb p{margin:10px 0 0;font-size:13.5px;font-weight:500;line-height:1.62;color:#D6CCF0;max-width:34ch;}
   .mcard .mb .mmore{margin-top:16px;font-size:9px;color:var(--lilac);}
   .mcard .mcount{position:absolute;top:22px;right:24px;z-index:2;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#CFC4EC;padding:8px 13px;border-radius:999px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(8px);}
   @media(max-width:1000px){.mband{grid-template-columns:1fr;}}
@@ -217,7 +217,7 @@
   .dhl-band{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:34px;padding:30px 38px;border-color:rgba(255,204,0,.30);background:linear-gradient(160deg,rgba(255,204,0,.10),rgba(255,255,255,.04) 55%,rgba(255,255,255,.02));}
   .dhl-band .logo{height:58px;width:auto;border-radius:9px;display:block;clip-path:inset(0 0 0 0);}
   .dhl-band .lbl{color:#FFCC00;font-size:10px;letter-spacing:.18em;}
-  .dhl-band h3{margin:8px 0 6px;font-size:clamp(22px,2.4vw,32px);font-weight:300;letter-spacing:-.03em;line-height:1.1;color:#fff;}
+  .dhl-band h3{margin:8px 0 6px;font-size:clamp(22px,2.4vw,32px);font-weight:400;letter-spacing:-.03em;line-height:1.1;color:#fff;}
   .dhl-band h3 b{font-weight:600;}
   .dhl-band p{margin:0;font-size:15px;line-height:1.55;color:#D9D1EE;max-width:560px;}
   .dhl-band ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
@@ -227,6 +227,37 @@
   .dhl-band.reveal.in .logo{clip-path:inset(0 0 0 0);}
   @media(prefers-reduced-motion:reduce){.dhl-band.reveal .logo{clip-path:none!important;transition:none!important;}}
   @media(max-width:860px){.dhl-band{grid-template-columns:1fr;gap:18px;padding:26px 24px;text-align:left}.dhl-band .logo{height:40px}.dhl-band ul{flex-direction:row;flex-wrap:wrap}}
+  /* Material data sheets (27 Nov): branded like the DHL band/badge, in the site's cyan */
+  .ds-sec{padding-top:0!important;padding-bottom:30px!important;}
+  .ds-band{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:34px;padding:30px 38px;border-color:rgba(122,223,245,.30);background:linear-gradient(160deg,rgba(122,223,245,.10),rgba(255,255,255,.04) 55%,rgba(255,255,255,.02));}
+  .ds-band .ds-ico{width:58px;height:58px;color:var(--cyan);display:block;clip-path:inset(0 0 0 0);}
+  .ds-band .lbl{color:var(--cyan);font-size:10px;letter-spacing:.18em;}
+  .ds-band h3{margin:8px 0 6px;font-size:clamp(22px,2.4vw,32px);font-weight:400;letter-spacing:-.03em;line-height:1.1;color:#fff;}
+  .ds-band h3 b{font-weight:600;}
+  .ds-band p{margin:0;font-size:15px;line-height:1.55;color:#D9D1EE;max-width:560px;}
+  .ds-band ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,auto);gap:8px;}
+  .ds-band li a{display:block;font-size:12px;letter-spacing:.04em;padding:6px 14px;border-radius:999px;border:1px solid rgba(122,223,245,.32);color:#BFEFFA;white-space:nowrap;text-decoration:none;transition:background-color .16s ease-out,border-color .16s ease-out;}
+  .ds-band li a::after{content:" ↓";opacity:.7;}
+  @media(hover:hover){.ds-band li a:hover{background:rgba(122,223,245,.12);border-color:rgba(122,223,245,.6);}}
+  .ds-band.reveal .ds-ico{clip-path:inset(100% 0 0 0);transition:clip-path .7s cubic-bezier(.23,1,.32,1) .25s;}
+  .ds-band.reveal.in .ds-ico{clip-path:inset(0 0 0 0);}
+  @media(prefers-reduced-motion:reduce){.ds-band.reveal .ds-ico{clip-path:none!important;transition:none!important;}}
+  @media(max-width:860px){.ds-band{grid-template-columns:1fr;gap:18px;padding:26px 24px;}.ds-band .ds-ico{width:40px;height:40px}.ds-band ul{display:flex;flex-wrap:wrap}}
+  .ds-badge{display:flex;align-items:center;gap:14px;margin-top:12px;padding:12px 14px;border-radius:16px;background:rgba(122,223,245,.07);border:1px solid rgba(122,223,245,.35);text-decoration:none;color:inherit;transition:background-color .16s ease-out,border-color .16s ease-out;}
+  .ds-badge .ds-ico{width:30px;height:30px;color:var(--cyan);flex:none;}
+  .ds-badge b{display:block;font-size:15px;font-weight:600;color:var(--cyan);letter-spacing:-.01em;}
+  .ds-badge span{display:block;font-size:12.5px;color:#D9D1EE;margin-top:2px;}
+  .ds-badge .dl{margin-left:auto;flex:none;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);padding:7px 12px;border-radius:999px;border:1px solid rgba(122,223,245,.4);}
+  .ds-badge:active{transform:scale(.99);}
+  @media(hover:hover){.ds-badge:hover{background:rgba(122,223,245,.13);border-color:rgba(122,223,245,.6);}}
+  @media(max-width:640px){.ds-badge{gap:12px}.ds-badge .ds-ico{width:22px;height:22px}.ds-badge .dl{padding:6px 10px}}
+
+  textarea.qty,.field textarea.qty{display:block;width:100%;box-sizing:border-box;min-height:0;resize:none;overflow:hidden;line-height:1.4;font-family:inherit;}
+  @media (max-width:640px){textarea.qty,.field textarea.qty{height:calc(2.8em + 26px);}}
+  .wa-float{position:fixed;right:22px;bottom:22px;z-index:60;display:flex;align-items:center;gap:10px;padding:12px 18px 12px 14px;border-radius:999px;background:#25D366;color:#0B2E17;font-weight:600;font-size:14px;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .2s cubic-bezier(.23,1,.32,1);}
+  .wa-float:hover{color:#0B2E17;transform:translateY(-2px);}
+  .wa-float:active{transform:scale(.97);}
+  @media (max-width:640px){.wa-float span{display:none;}.wa-float{padding:13px;right:16px;bottom:16px;}}
 </style>
 </head>
 <body>
@@ -252,13 +283,13 @@
     <a href="#compounds">Compounds</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
-    <a href="#" class="cta" data-appt>Book an appointment</a>
+    <a href="#" class="cta" data-appt>Request a Quote</a>
   </nav>
   <div class="menu-btn glass lbl" onclick="document.getElementById('mobile-nav').classList.toggle('open')">Menu</div>
 </header>
 <div id="mobile-nav" class="glass">
   <a href="products.html">Products</a><a href="#compounds">Compounds</a>
-  <a href="about.html">About</a><a href="contact.html">Contact</a><a href="#" data-appt>Book an appointment</a>
+  <a href="about.html">About</a><a href="contact.html">Contact</a><a href="#" data-appt>Request a Quote</a>
 </div>
 
 <a id="top"></a>
@@ -266,11 +297,12 @@
   <h1>The part that<br><b>must not leak.</b></h1>
   <p class="sub">Helix Engineering moulds every kind of rubber sealing component in ten compounds — made to your drawing in Coimbatore, and shipped worldwide via DHL &amp; FedEx.</p>
   <div class="cta-row">
-    <button class="btn btn-lg btn-solid lbl" data-appt>Book an appointment</button>
+    <button class="btn btn-lg btn-solid lbl" data-appt>Request a Quote</button>
     <a href="products.html" class="btn btn-lg btn-ghost glass lbl">See the catalogue</a>
   </div>
 </section>
 <section class="blk dhl-sec"><div class="dhl-band glass reveal"><img class="logo" src="dhl-logo.png" alt="DHL"><div><div class="lbl">Delivery</div><h3>Free delivery, <b>door to door.</b></h3><p>Every order is door-delivered by DHL to your premises, anywhere in the world.</p></div><ul><li>Door-delivered</li><li>To your premises</li><li>Worldwide</li></ul></div></section>
+<section class="blk ds-sec"><div class="ds-band glass reveal"><svg class="ds-ico" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M12 5h17l9 9v29H12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M29 5v9h9" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M18 23h14M18 29h14M18 35h9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><div><div class="lbl">Material data sheets</div><h3>Every rubber, <b>on record.</b></h3><p>Download the material data sheet for each elastomer we mould: tensile strength, hardness, compression set, heat and chemical resistance.</p></div><ul><li><a href="datasheets/helix-nitrile-nbr-data-sheet.pdf" target="_blank" rel="noopener">Nitrile</a></li><li><a href="datasheets/helix-viton-fkm-data-sheet.pdf" target="_blank" rel="noopener">Viton</a></li><li><a href="datasheets/helix-epdm-data-sheet.pdf" target="_blank" rel="noopener">EPDM</a></li><li><a href="datasheets/helix-neoprene-cr-data-sheet.pdf" target="_blank" rel="noopener">Neoprene</a></li><li><a href="datasheets/helix-hnbr-data-sheet.pdf" target="_blank" rel="noopener">HNBR</a></li><li><a href="datasheets/helix-fluorosilicone-fvmq-data-sheet.pdf" target="_blank" rel="noopener">Fluorosilicone</a></li><li><a href="datasheets/helix-aflas-fepm-data-sheet.pdf" target="_blank" rel="noopener">AFLAS</a></li><li><a href="datasheets/helix-ffkm-data-sheet.pdf" target="_blank" rel="noopener">FFKM</a></li></ul></div></section>
 
 <!-- Three categories -->
 <section class="blk" id="categories">
@@ -356,8 +388,8 @@
 <!-- Final contact CTA -->
 <section class="cta-final glass reveal">
   <h2>Tell us what <b>has to hold.</b></h2>
-  <p>Medium, pressure, temperature range and quantity. That is enough for us to specify a compound and book you an appointment.</p>
-  <div style="margin-top:32px;"><button class="btn btn-lg btn-solid lbl" data-appt>Book an appointment</button></div>
+  <p>Medium, pressure, temperature range and quantity. That is enough for us to specify a compound and send you a quote.</p>
+  <div style="margin-top:32px;"><button class="btn btn-lg btn-solid lbl" data-appt>Request a Quote</button></div>
   <div class="contact-chips">
     <div class="cc glass"><span class="lbl k">Sales</span> <span class="v">sales@helixengineering.co.in</span></div>
     <div class="cc glass"><span class="lbl k">Phone</span> <span class="v">(+91) 90036 71545</span></div>
@@ -371,7 +403,7 @@
    <p>Rubber, aluminium and steel parts, made to your drawing in Coimbatore since 1999. Shipped worldwide.</p></div>
   <div class="foot-col"><div class="lbl">Explore</div><a href="products.html">Rubber parts</a><a href="aluminium.html">Aluminium parts</a><a href="steel.html">Steel parts</a><a href="about.html">About</a><a href="contact.html">Contact us</a></div>
   <div class="foot-col"><div class="lbl">Legal</div><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms &amp; conditions</a></div>
-  <div class="foot-col"><div class="lbl">Get in touch</div><a href="mailto:sales@helixengineering.co.in">sales@helixengineering.co.in</a><a href="tel:+919003671545">(+91) 90036 71545</a><span class="foot-addr">5/516 KNG Pudur Road,<br>Coimbatore 641108, Tamil Nadu, India</span><span class="foot-addr">Mon–Fri 09:00–18:00 · Sat–Sun 10:00–16:00</span></div>
+  <div class="foot-col"><div class="lbl">Get in touch</div><a href="mailto:sales@helixengineering.co.in">sales@helixengineering.co.in</a><a href="tel:+919003671545">(+91) 90036 71545</a><a href="https://wa.me/919003671545?text=Hello%20Helix%20Engineering%2C%20I%20would%20like%20a%20quote." target="_blank" rel="noopener">WhatsApp us</a><span class="foot-addr">5/516 KNG Pudur Road,<br>Coimbatore 641108, Tamil Nadu, India</span><span class="foot-addr">Mon–Fri 09:00–18:00 · Sat–Sun 10:00–16:00</span></div>
  </div>
  <div class="foot-bottom"><span>© 2026 Helix Engineering, Coimbatore</span><span>ISO 9001 certified · ITAR registered</span></div>
 </footer>
@@ -380,8 +412,8 @@
 <div class="modal-overlay" id="appt">
   <div class="modal glass modal-wrap">
     <button class="x" onclick="closeAppt()" aria-label="Close">×</button>
-    <h3>Book an appointment</h3>
-    <p class="small">Tell us the part and the duty. We reply within one business day to fix a call or a factory visit. A material suggestion is not engineering approval until the application is confirmed.</p>
+    <h3>Request a Quote</h3>
+    <p class="small">Tell us the part and the duty. We reply within one business day with your quote. A material suggestion is not engineering approval until the application is confirmed.</p>
     <form onsubmit="return submitAppt(event)">
       <div class="row2">
         <div class="field"><label>Name</label><input required name="name" placeholder="Your name"></div>
@@ -391,12 +423,10 @@
         <div class="field"><label>Email</label><input required type="email" name="email" placeholder="you@company.com"></div>
         <div class="field"><label>Phone</label><input name="phone" placeholder="Phone / WhatsApp"></div>
       </div>
-      <div class="row2">
-        <div class="field"><label>Product of interest</label><input id="appt-product" name="product" placeholder="e.g. Viton O-Ring"></div>
-        <div class="field"><label>Preferred date</label><input type="date" name="date"></div>
-      </div>
+      <div class="field"><label>Product of interest</label><input id="appt-product" name="product" placeholder="e.g. Viton O-Ring"></div>
+      <div class="field"><label>Quantity</label><textarea class="qty" rows="1" name="qty" placeholder="Any Custom Quantity can be manufactured"></textarea></div>
       <div class="field"><label>Requirement</label><textarea name="message" placeholder="Medium, pressure, temperature range, quantity, or attach a drawing when we reply."></textarea></div>
-      <button class="btn btn-lg btn-solid lbl" type="submit" style="width:100%;margin-top:6px;">Send appointment request</button>
+      <button class="btn btn-lg btn-solid lbl" type="submit" style="width:100%;margin-top:6px;">Send quote request</button>
     </form>
   </div>
 </div>
@@ -432,8 +462,8 @@ function submitAppt(e){
   const d=Object.fromEntries(new FormData(e.target).entries());
   // In WordPress this posts to the site and emails sales@helixengineering.co.in.
   // Static preview: hand off to the mail client so the flow is demonstrable.
-  const body=`Name: ${d.name}%0ACompany: ${d.company||''}%0AEmail: ${d.email}%0APhone: ${d.phone||''}%0AProduct: ${d.product||''}%0APreferred date: ${d.date||''}%0A%0A${(d.message||'').replace(/\n/g,'%0A')}`;
-  window.location.href=`mailto:sales@helixengineering.co.in?subject=Appointment request — ${encodeURIComponent(d.product||'Helix')}&body=${body}`;
+  const body=`Name: ${d.name}%0ACompany: ${d.company||''}%0AEmail: ${d.email}%0APhone: ${d.phone||''}%0AProduct: ${d.product||''}%0AQuantity: ${d.qty||''}%0A%0A${(d.message||'').replace(/\n/g,'%0A')}`;
+  window.location.href=`mailto:sales@helixengineering.co.in?subject=Quote request — ${encodeURIComponent(d.product||'Helix')}&body=${body}`;
   return false;
 }
 // ---------- Living aurora shader gradient (WebGL) ----------
@@ -486,5 +516,6 @@ function submitAppt(e){
   document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(raf);}else if(!reduce){raf=requestAnimationFrame(draw);}});
 })();
 </script>
+<a class="wa-float" href="https://wa.me/919003671545?text=Hello%20Helix%20Engineering%2C%20I%20would%20like%20a%20quote." target="_blank" rel="noopener" aria-label="Chat with Helix Engineering on WhatsApp"><svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.2.6 4.4 1.7 6.3L3 29l7.3-1.9c1.8 1 3.8 1.5 5.8 1.5 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-4.3 1.1 1.2-4.2-.3-.4c-1-1.6-1.5-3.5-1.5-5.4C5.4 9.8 10.2 5.1 16 5.1s10.6 4.7 10.6 10.5S21.8 26.1 16 26.1zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 .8.4 1.4.6 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg><span>WhatsApp us</span></a>
 </body>
 </html>
